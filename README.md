@@ -2,120 +2,174 @@
 
 ## Project Overview
 
-This capstone project was completed as part of the Google Data Analytics Professional Certificate.
+This project was completed as part of the Google Data Analytics Professional Certificate Capstone.
 
-The objective was to analyze Cyclistic bike-share usage data and identify behavioral differences between annual members and casual riders in order to develop data-driven recommendations for increasing memberships.
+The goal of this analysis was to identify behavioral differences between Cyclistic annual members and casual riders and provide data-driven recommendations to increase membership conversions.
+
+Using over **5.5 million bike-share rides** collected between **January 2025 and December 2025**, I cleaned, transformed, analyzed, and visualized trip data using R, Tidyverse, Lubridate, and ggplot2.
 
 ---
 
-## Business Task
+## Business Problem
 
-How do annual members and casual riders use Cyclistic bikes differently?
+Cyclistic wants to increase the number of annual memberships.
+
+To support this objective, the analysis focused on answering the following question:
+
+**How do annual members and casual riders use Cyclistic bikes differently?**
 
 ---
 
 ## Tools Used
 
-- R
-- RStudio
-- Tidyverse
-- Lubridate
-- ggplot2
-- GitHub
+* R
+* RStudio
+* Tidyverse
+* Lubridate
+* ggplot2
+* GitHub
 
 ---
 
 ## Dataset
 
-The analysis used 12 months of Cyclistic trip data from January 2025 through December 2025.
+The dataset contains historical Cyclistic trip data made available through the Google Data Analytics Capstone Project.
 
-- Total records analyzed: 5,552,965
-- Rider types: Members and Casual Riders
-- Bike types: Classic Bikes and Electric Bikes
+Data used in this analysis includes:
 
-Data Source:
-
-https://divvy-tripdata.s3.amazonaws.com/index.html
+* January 2025 – December 2025
+* 12 monthly trip files
+* 5.5 million ride records
+* 13 original variables
 
 ---
 
-## Data Cleaning & Processing
+## Project Workflow
 
-The data preparation process included:
+### Ask
 
-- Combining 12 monthly datasets into a single dataframe
-- Checking for duplicate ride IDs
-- Assessing missing values
-- Creating ride duration variables
-- Creating day, month, and date fields
-- Removing invalid rides with negative or zero durations
+Defined the business problem and identified key stakeholders.
 
-Final cleaned dataset:
+### Prepare
 
-- 5,552,965 ride records
-- 17 analysis variables
+Collected and evaluated 12 months of Cyclistic trip data and assessed data credibility using the ROCCC framework.
+
+### Process
+
+* Combined 12 monthly datasets
+* Verified data consistency
+* Checked for duplicate ride IDs
+* Identified missing values
+* Created ride duration metrics
+* Removed invalid ride records
+
+### Analyze
+
+Compared annual members and casual riders across:
+
+* Ride volume
+* Ride duration
+* Day-of-week usage
+* Seasonal trends
+* Bike type preferences
+
+### Share
+
+Created visualizations to communicate rider behavior patterns and business insights.
+
+### Act
+
+Developed recommendations to increase annual membership conversions.
 
 ---
 
 ## Key Findings
 
-### 1. Members Generate More Trips
+### Rider Distribution
 
-- Members: 3,553,477 rides
-- Casual Riders: 1,999,488 rides
+* Annual Members: 3,553,477 rides
+* Casual Riders: 1,999,488 rides
 
-Members accounted for approximately 64% of all rides.
+### Average Ride Length
 
-### 2. Casual Riders Take Longer Trips
+* Casual Riders: 22.6 minutes
+* Annual Members: 12.3 minutes
 
-- Casual Riders: 22.6 minutes average ride length
-- Members: 12.3 minutes average ride length
+### Usage Patterns
 
-### 3. Riding Patterns Differ by Day of Week
+* Casual riders primarily ride on weekends.
+* Members ride more consistently throughout the work week.
+* Both rider groups prefer electric bikes over classic bikes.
+* Ridership peaks during summer months.
 
-- Casual riders peak on weekends
-- Members peak during weekdays
+---
 
-### 4. Seasonal Trends
+## Visualizations
 
-- Ridership peaks during summer months
-- Casual riders exhibit stronger seasonal behavior
+### Average Ride Length by Rider Type
 
-### 5. Electric Bikes Are Preferred
+<img width="1266" height="471" alt="average_ride_length" src="https://github.com/user-attachments/assets/0144d1b2-1e89-4411-b277-e4e3b070ba3c" />
 
-Both rider groups favored electric bikes over classic bikes.
+
+### Rides by Day of Week
+
+<img width="1266" height="471" alt="rides_by_day" src="https://github.com/user-attachments/assets/af42a48a-45e4-4792-9a9c-805c05fb0f2c" />
+
+
+### Monthly Ridership Trends
+
+<img width="1266" height="471" alt="monthly_ridership" src="https://github.com/user-attachments/assets/530a0e99-2577-4881-90d3-db066822f98f" />
+
 
 ---
 
 ## Business Recommendations
 
-1. Launch weekend-focused membership promotions.
-2. Increase marketing efforts during peak riding months.
-3. Highlight membership cost savings for frequent casual riders.
+### 1. Target Weekend Riders
+
+Develop campaigns focused on frequent weekend users who may benefit from membership pricing.
+
+### 2. Launch Seasonal Promotions
+
+Promote memberships during peak riding months when engagement is highest.
+
+### 3. Highlight Cost Savings
+
+Show casual riders how annual memberships reduce long-term transportation costs.
+
+### 4. Promote Electric Bike Benefits
+
+Leverage the popularity of electric bikes in membership marketing campaigns.
 
 ---
 
 ## Repository Structure
 
 ```text
-scripts/
-├── 01_import_and_prepare.R
-├── 02_data_cleaning.R
-└── 03_analysis.R
-
-visualizations/
-├── average_ride_length.png
-├── rides_by_day.png
-└── monthly_ridership_trends.png
-
-report/
-└── Cyclistic_Bike_Share_Report.pdf
+cyclistic-bike-share-analysis/
+│
+├── scripts/
+│   ├── 01_import_and_prepare.R
+│   ├── 02_data_cleaning.R
+│   └── 03_analysis.R
+│
+├── visualizations/
+│   ├── average_ride_length.png
+│   ├── rides_by_day.png
+│   └── monthly_ridership.png
+│
+├── report/
+│   └── Cyclistic_Case_Study_Report.md
+│
+├── README.md
+└── LICENSE
 ```
 
 ---
 
 ## Author
 
-Riyad Awad
+**Riyad Awad**
 
-Google Data Analytics Professional Certificate Capstone Project
+Data Analyst with experience in SQL, R, Tableau, Google Sheets, and business operations. Passionate about using data to identify trends, improve processes, and support data-driven decision-making.
+
